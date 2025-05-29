@@ -1,0 +1,252 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f5fa;
+}
+
+/* HOME PAGE STYLES */
+
+.navbar {
+    background-color: #7b157a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 20px 0;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.navbar-texts {
+    width: 30%;
+    text-align: center;
+}
+
+.nav-h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+main {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(123, 21, 122, 0.6);
+    text-align: center;
+    max-width: 600px;
+    color: #7b157a;
+    margin: 80px auto 0 ;
+    box-sizing: border-box;
+}
+
+.home-title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.home-text {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.login-button {
+    margin-top: 30px;
+    background-color: #fff;
+    color: #7b157a;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    border: 1px solid #7b157a;
+}
+
+.login-button:hover {
+    background-color: #7b157a;
+    color: #fff;
+    border: 1px solid #7b157a;
+}
+
+/* NAVIGATION STYLES */
+
+.apps-container {
+    display: flex;
+    flex-wrap: wrap; /* permite quebrar linha quando não couber */
+    justify-content: center;
+    gap: 24px; /* espaçamento entre os cards */
+    padding: 40px 20px;
+    background-color: #f8f5fa;
+}
+
+.app-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px; /* largura fixa para facilitar organização */
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    flex-grow: 1; /* opcional: permite que os cards se estiquem um pouco */
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.app-title {
+    font-size: 24px;
+    color: #7b157a;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.app-title:hover {
+    text-decoration: underline;
+}
+
+.app-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.back-btn {
+  background-color: #7b157a;
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: #5a0e5a;
+  transform: scale(1.03);
+}
+
+.back-btn:active {
+  transform: scale(0.98);
+}
+
+/* LOGIN PAGE STYLES */
+
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.login-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    color: #7b157a;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.login-input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.login-button {
+    background-color: #7b157a;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #5a0e5a;
+}
+
+/* MESSAGES SECTION STYLES */
+
+.message-container {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.message {
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Estilos para tipos de mensagem */
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+.message.warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
