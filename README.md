@@ -1,1 +1,1 @@
-<h1>This project I try learning Django </h1>
+<h3>In this project, I was learning to use the Django framework in the mini course "Django: web app with Python". This course took place during WeekIt, a technology event at IFBA, Vitoria da Conquista-BA campus.</h3>
